@@ -7,6 +7,16 @@ const nextConfig = {
     });
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "file.koreafilm.or.kr",
+        port: "",
+        pathname: "/thm/**",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
